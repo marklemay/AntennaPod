@@ -265,7 +265,7 @@ public class ExoPlayerWrapper {
     }
 
     public void setPlaybackParams(float speed, boolean skipSilence) {
-        playbackParameters = new PlaybackParameters(speed, playbackParameters.pitch);
+        playbackParameters = new PlaybackParameters(speed, speed);
         exoPlayer.setSkipSilenceEnabled(skipSilence);
         exoPlayer.setPlaybackParameters(playbackParameters);
     }
